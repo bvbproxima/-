@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solaris</title>
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header" style="background-color:black">
+            <!-- <video src="./2024-03-23 19-13-52.mp4" muted loop autoplay class="header-back"></video>  -->
+            <div class="background"></div>
+            <section class="header-top">
+                <div class="banner"></div>
+                <div class="container">
+                    <div class="header-content" style="border-bottom: 3px solid black;">
+                        <a href="./index.html">
+                            <img class="header-logo" src="./images/solaris.png" width="140px">
+                        </a>
+                        <nav class="header-nav">
+                            <ul class="header-nav__list">
+                                <li class="header-nav__item">
+                                    <a href="./routes.html" class="header-nav__link">Маршрути</a>
+                                </li>
+                                <li class="header-nav__item">
+                                    <a href="" class="header-nav__link">Космічні об'єкти</a>
+                                </li>
+                                <li class="header-nav__item">
+                                    <a href="./preparation.html" class="header-nav__link">Підготовка</a>
+                                </li>
+                                <li class="header-nav__item">
+                                    <a href="./aboutus.html" class="header-nav__link">Про нас</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <button class="header-support">
+                            <img class="header-support__img" src="./images/call.png" width="30px" height="30px">
+                        </button>
+                    </div>
+                    <!-- Форма обратной связи -->
+                    <div class="feedback-form">
+                        <h2>Задайте питання нашій підтримці</h2>
+                        <form class="support-form" id="contactForm" method="POST" action="send_email.php">
+                            <input type="text" id="contact" name="contact" placeholder="Email або телефон"><br>
+                            <label for="question">Ваше питання:</label><br>
+                            <textarea id="question" name="question" rows="4" cols="50"></textarea><br>
+                            <button class="btn" type="submit">Відправити</button>
+                        </form>
+                    </div>
+                    <!-- Конец формы -->
+                </div>
+            </section>
+        </header>
+        
+        <footer class="footer">
+            <div class="container">
+               <div class="footer-content">
+                <img class="footer-content__img" src="./images/solaris.png" height="120" width="200" alt="">
+                <p class="footer-content__text">Created by <span><a href="">@bvbproxima</a></span></p>
+                <div class="footer-decor"></div>
+                <p class="copyright">Copyright © 2024. All rights reserved.</p>
+               </div>
+
+                 </div>
+                </div>
+            </div>
+        </footer>
+        
+    </div>
+
+    <script defer src="./scripts.js"></script>
+</body>
+</html>

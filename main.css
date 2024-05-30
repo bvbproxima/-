@@ -1,0 +1,1160 @@
+/* .main-slider{
+    background-image: url(./images/Знімок\ екрана\ \(696\).png);
+    background-size: cover; /* Розтягнути зображення на всю область */
+    /* background-position: center;
+    height: 100vh;
+/* } */ 
+.main{
+    flex-grow: 1;
+}
+.slider__m{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/Знімок\ екрана\ \(696\).png);
+    background-size: cover;
+    background-position: center;
+    animation: slideM 9s infinite;
+}
+@keyframes slideM{
+    33%{
+        background-image: url(./images/Знімок\ екрана\ \(695\).png);
+    }
+    66%{
+        background-image: url(./images/Знімок\ екрана\ \(694\).png);
+    }
+    100%{
+        background-image: url(./images/Знімок\ екрана\ \(696\).png);
+    }
+  
+}
+
+
+.main-mars{
+    padding-top: 600px;
+}
+.main-mars__title{
+    font-size: 50px;
+    font-family: 'Inter';
+    color: white;
+    max-width: 750px;
+    text-transform: uppercase;
+
+}
+.main-mars__btn{
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    background-color: transparent;
+    width: 300px;
+    height: 80px;
+    border: 4px solid white;
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+.slider__s{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/Знімок\ екрана\ \(704\).png);
+    background-size: cover;
+    background-position: center;
+    animation: slideS 15s infinite;
+}
+/* @keyframes slideS{
+    33%{
+        background-image: url(./images/Знімок\ екрана\ \(703\).png);
+    }
+    66%{
+        background-image: url(./images/Знімок\ екрана\ \(702\).png);
+    }
+    100%{
+        background-image: url(./images/Знімок\ екрана\ \(704\).png);
+    }
+  
+} */
+.main-saturn{
+    padding-top: 600px;
+}
+.main-saturn__title{
+    font-size: 50px;
+    font-family: 'Inter';
+    color: white;
+    max-width: 750px;
+    text-transform: uppercase;
+
+}
+.main-saturn__btn{
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    background-color: transparent;
+    width: 300px;
+    height: 80px;
+    border: 4px solid white;
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+/*для загальної анімації*/
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+}
+@media(prefers-reduced-motion) {
+    .hidden{
+        transition: none;
+    }
+    
+}
+
+
+
+
+
+.hidden2{
+    opacity: 0;
+    transition: all 2s;
+    filter: blur(5px);
+    
+}
+.show2{
+    opacity: 1;
+    filter: blur(0);
+}
+@media(prefers-reduced-motion) {
+    .hidden2{
+        transition: none;
+    }
+    
+}
+
+
+
+
+/* achievement */
+.achievement{
+    background-color: black;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid white;
+
+
+}
+.achievement-cards{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    
+}
+
+.achievement-card img{
+    background-color: white;
+    border-radius: 50px;
+    padding: 5px; 
+    margin-bottom: 15px;
+}
+.achievement-card__title{
+    font-size: 16px;
+    font-weight: 800;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+
+}
+.achievement-card{
+    color: white;
+    text-align: center;
+    max-width: 200px;
+
+    
+    
+
+    
+}
+.achievement-card__icon, .achievement-card__title {
+    transition: transform 0.4s;
+}
+
+.achievement-card:hover .achievement-card__icon {
+    transform: translateY(-30px);
+}
+
+.achievement-card:hover .achievement-card__title {
+    transform: translateY(30px);
+}
+/* rocket */
+.rocket{
+    background-image: url(./images/Знімок\ екрана\ \(738\).png);
+    width: 100%;
+    height: 100vh;
+    
+    background-size: cover;
+    background-position: center;
+}
+.rocket-content{
+    padding-top: 500px;
+}
+.main-rocket__title{
+    font-size: 50px;
+    font-family: 'Inter';
+    color: white;
+    max-width: 750px;
+    text-transform: uppercase; 
+}
+.main-rocket__btn{
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    background-color: transparent;
+    width: 300px;
+    height: 80px;
+    border: 4px solid white;
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+/* FOR OTHER HTML PAGES */
+.feedback-form {
+    text-align: center;
+    margin-top: 220px;
+    font-family: 'Inter';
+    text-transform: uppercase;
+   
+}
+
+.feedback-form h2 {
+    margin-bottom: 100px;
+    font-size: 40px;
+    color: white;
+    
+}
+
+.feedback-form form {
+   
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+.feedback-form input[type="text"],
+.feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.feedback-form textarea{
+    resize: none;
+
+}
+
+.feedback-form button[type="submit"] {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    background-color: transparent;
+    width: 250px;
+    height: 60px;
+    border: 4px solid white;
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.support-form label{
+    color: white;
+    
+}
+
+
+
+
+
+/* -------------------------------MERCURY PAGE --------------------------------*/
+
+.mercury-back{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1000;
+}
+.header-mercury__content{
+    display: flex;
+    height: 100vh;
+    align-items: end;
+    padding-bottom: 200px;
+    
+}
+.header-mercury__title{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    max-width: 800px;
+    font-size: 60px;
+    
+
+}
+.main-mercury{
+    background-color: black;
+    border-bottom: 2px solid white;
+    padding-bottom: 40px;
+}
+.main-mercury__content{
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    padding: 40px 0 ;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    
+}
+.mercury-column__1{
+    max-width: 600px;
+    font-size: 35px;
+   
+
+}
+.mercury-column__1 ul li{
+    list-style: none;
+   
+}
+.mercury-column__1 ul li:before{
+    position: absolute;
+    content: '';
+    width: 17px;
+    height: 17px;
+    background-color: white;
+    transform: rotate(45deg);
+    
+    left: -29px;
+    
+    
+    
+}
+.mercury-column__1 ul li{
+    padding-bottom: 5px;
+    font-weight: 200;
+    
+}
+.mercury-column__2{
+    max-width: 800px;
+    
+    font-weight: 200;
+    
+    
+}
+.mercury-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+   
+}
+.mercury-btn button{
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: transparent;
+    width: 350px;
+    height: 80px;
+    border: 4px solid white;
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+/* -------------------------------VENUS PAGE --------------------------------*/
+.venus-back{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1000;
+
+}
+.header-venus__content{
+    display: flex;
+    height: 100vh;
+    align-items: end;
+    padding-bottom: 200px;
+    
+}
+.header-venus__title{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    max-width: 800px;
+    font-size: 60px;
+    
+
+}
+.main-venus{
+    background-color: black;
+    border-bottom: 2px solid white;
+    padding-bottom: 40px;
+}
+.main-venus__content{
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    padding: 40px 0 ;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    
+}
+.venus-column__1{
+    max-width: 600px;
+    font-size: 35px;
+   
+
+}
+.venus-column__1 ul li{
+    list-style: none;
+   
+}
+.venus-column__1 ul li:before{
+    position: absolute;
+    content: '';
+    width: 17px;
+    height: 17px;
+    background-color: white;
+    transform: rotate(45deg);
+    
+    left: -29px;
+    
+    
+    
+}
+.venus-column__1 ul li{
+    padding-bottom: 5px;
+    font-weight: 200;
+    
+}
+.venus-column__2{
+    max-width: 800px;
+    
+    font-weight: 200;
+    
+    
+}
+.venus-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+   
+}
+.venus-btn button{
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: transparent;
+    width: 350px;
+    height: 80px;
+    border: 4px solid white;
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+/* -------------------------------MARS PAGE --------------------------------*/
+.mars-back{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1000;
+
+}
+
+.header-mars__content{
+    display: flex;
+    height: 100vh;
+    align-items: end;
+    padding-bottom: 200px;
+    
+}
+.header-mars__title{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    max-width: 800px;
+    font-size: 60px;
+    
+
+}
+
+
+.main-mars-page{
+    background-color: black;
+    border-bottom: 2px solid white;
+    padding-bottom: 40px;
+} 
+.main-mars__content{
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    padding: 40px 0 ;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    
+} 
+.mars-column__1{
+    max-width: 600px;
+    font-size: 35px;
+   
+
+} 
+.mars-column__1 ul li{
+    list-style: none;
+   
+}
+.mars-column__1 ul li:before{
+    position: absolute;
+    content: '';
+    width: 17px;
+    height: 17px;
+    background-color: white;
+    transform: rotate(45deg);
+    
+    left: -29px;
+    
+    
+    
+}
+.mars-column__1 ul li{
+    padding-bottom: 5px;
+    font-weight: 200;
+    
+}
+.mars-column__2{
+    max-width: 800px;
+    
+    font-weight: 200;
+    
+    
+}  
+.mars-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+   
+}
+.mars-btn button{
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: transparent;
+    width: 350px;
+    height: 80px;
+    border: 4px solid white;
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+} 
+
+
+/* -------------------------------JUPITER PAGE --------------------------------*/
+.jupiter-back{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1000;
+
+}
+.header-jupiter__content{
+    display: flex;
+    height: 100vh;
+    align-items: end;
+    padding-bottom: 200px;
+    
+}
+.header-jupiter__title{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    max-width: 800px;
+    font-size: 60px;
+    
+
+}
+
+
+.main-jupiter{
+    background-color: black;
+    border-bottom: 2px solid white;
+    padding-bottom: 40px;
+} 
+.main-jupiter__content{
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    padding: 40px 0 ;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    
+} 
+.jupiter-column__1{
+    max-width: 600px;
+    font-size: 35px;
+   
+
+} 
+.jupiter-column__1 ul li{
+    list-style: none;
+   
+}
+.jupiter-column__1 ul li:before{
+    position: absolute;
+    content: '';
+    width: 17px;
+    height: 17px;
+    background-color: white;
+    transform: rotate(45deg);
+    
+    left: -29px;
+    
+    
+    
+}
+.jupiter-column__1 ul li{
+    padding-bottom: 5px;
+    font-weight: 200;
+    
+}
+.jupiter-column__2{
+    max-width: 800px;
+    
+    font-weight: 200;
+    
+    
+}  
+.jupiter-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+   
+}
+.jupiter-btn button{
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: transparent;
+    width: 350px;
+    height: 80px;
+    border: 4px solid white;
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+} 
+/* -------------------------------SATURN PAGE --------------------------------*/
+.saturn-back{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1000;
+
+}
+
+.header-saturn__content{
+    display: flex;
+    height: 100vh;
+    align-items: end;
+    padding-bottom: 200px;
+    
+}
+.header-saturn__title{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    max-width: 800px;
+    font-size: 60px;
+    
+
+}
+
+
+.main-saturn-page{
+    background-color: black;
+    border-bottom: 2px solid white;
+    padding-bottom: 40px;
+} 
+.main-saturn__content{
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    padding: 40px 0 ;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    
+} 
+.saturn-column__1{
+    max-width: 600px;
+    font-size: 35px;
+   
+
+} 
+.saturn-column__1 ul li{
+    list-style: none;
+   
+}
+.saturn-column__1 ul li:before{
+    position: absolute;
+    content: '';
+    width: 17px;
+    height: 17px;
+    background-color: white;
+    transform: rotate(45deg);
+    
+    left: -29px;
+    
+    
+    
+}
+.saturn-column__1 ul li{
+    padding-bottom: 5px;
+    font-weight: 200;
+    
+}
+.saturn-column__2{
+    max-width: 800px;
+    
+    font-weight: 200;
+    
+    
+}  
+.saturn-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+   
+}
+.saturn-btn button{
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: transparent;
+    width: 350px;
+    height: 80px;
+    border: 4px solid white;
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+} 
+
+/* -------------------------------URANUS PAGE --------------------------------*/
+.uranus-back{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1000;
+
+
+}
+
+.header-uranus__content{
+    display: flex;
+    height: 100vh;
+    align-items: end;
+    padding-bottom: 200px;
+    
+}
+.header-uranus__title{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    max-width: 800px;
+    font-size: 60px;
+    
+
+}
+
+
+.main-uranus{
+    background-color: black;
+    border-bottom: 2px solid white;
+    padding-bottom: 40px;
+} 
+.main-uranus__content{
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    padding: 40px 0 ;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    
+} 
+.uranus-column__1{
+    max-width: 600px;
+    font-size: 35px;
+   
+
+} 
+.uranus-column__1 ul li{
+    list-style: none;
+   
+}
+.uranus-column__1 ul li:before{
+    position: absolute;
+    content: '';
+    width: 17px;
+    height: 17px;
+    background-color: white;
+    transform: rotate(45deg);
+    
+    left: -29px;
+    
+    
+    
+}
+.uranus-column__1 ul li{
+    padding-bottom: 5px;
+    font-weight: 200;
+    
+}
+.uranus-column__2{
+    max-width: 800px;
+    
+    font-weight: 200;
+    
+    
+}  
+.uranus-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+   
+}
+.uranus-btn button{
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: transparent;
+    width: 350px;
+    height: 80px;
+    border: 4px solid white;
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+} 
+
+/* -------------------------------NEPTUNE PAGE --------------------------------*/
+.neptune-back{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1000;
+
+    
+}
+.header-neptune__content{
+    display: flex;
+    height: 100vh;
+    align-items: end;
+    padding-bottom: 200px;
+    
+}
+.header-neptune__title{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    max-width: 800px;
+    font-size: 60px;
+    
+
+}
+
+
+.main-neptune{
+    background-color: black;
+    border-bottom: 2px solid white;
+    padding-bottom: 40px;
+} 
+.main-neptune__content{
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    padding: 40px 0 ;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    
+} 
+.neptune-column__1{
+    max-width: 600px;
+    font-size: 35px;
+   
+
+} 
+.neptune-column__1 ul li{
+    list-style: none;
+   
+}
+.neptune-column__1 ul li:before{
+    position: absolute;
+    content: '';
+    width: 17px;
+    height: 17px;
+    background-color: white;
+    transform: rotate(45deg);
+    
+    left: -29px;
+    
+    
+    
+}
+.neptune-column__1 ul li{
+    padding-bottom: 5px;
+    font-weight: 200;
+    
+}
+.neptune-column__2{
+    max-width: 800px;
+    
+    font-weight: 200;
+    
+    
+}  
+.neptune-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+   
+}
+.neptune-btn button{
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: transparent;
+    width: 350px;
+    height: 80px;
+    border: 4px solid white;
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+} 
+/* ------------------------------ */
+.btn{
+    transition: 0.4s;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+    transition: 0.4s;
+    
+}
+
+/* _----------------------------ROUTES */
+.routes-content{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    justify-content: center;
+    
+
+
+}
+.routes-block{
+    border: 1px solid white;
+    background: rgb(0, 0, 0);
+    width: 600px;
+    height: 300px;
+    font-size: 23px;
+    font-family: 'Inter';
+    text-transform: uppercase;
+    padding: 20px;
+    color: white;
+    transition: 0.7s;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+}
+.routes-block h6{
+    font-size: 40px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.routes-block h6:before{
+    position: absolute;
+    content: '';
+    width: 300px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    top: 64px;
+    border-radius: 20px;
+    transition: 0.7s;
+
+}
+.soon{
+    font-size: 40px;
+}
+.routes-details{
+    max-width: 500px;
+}
+.routes-block:hover{
+    background-color: white;
+    color: black;
+    border: 6px solid rgba(119, 113, 102, 0.155);
+    width: 550px;
+}
+.routes-block:hover h6::before {
+    background-color: black; 
+    width: 100%;
+    transition: 0.7s;
+}
+
+
+/* ------------ABOUT US------------------ */
+.about-us{
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+.about-us__content{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+
+
+}
+.about-us__block1{
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+   
+}
+.about-us__block2{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    
+}
+.about-us__content h3{
+    text-align: center;
+}
+
+.grey-color{
+    color: rgb(150, 141, 141);
+    text-decoration: none;
+
+}
+.about-us__title{
+    font-size: 45px;
+    margin-bottom: 35px;
+    position: relative;
+}
+.about-us__text{
+    max-width: 1100px;
+    font-size: 25px;
+}
+.about-us__text span{
+    
+    text-decoration: underline;
+}
+.about-us__title::before{
+    position: absolute;
+    content: '';
+    width: calc(100%/3);
+    height: 2px;
+    background-color: white;
+    top: 65px;
+}
+
+
+.about-us__media{
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-family: 'Inter';
+    font-size: 25px;
+    color: white;
+    max-width: 1000px;
+    text-align: center;
+    margin-top: 40px;
+    
+}
+.about-us__media img{
+    margin-top: 40px;
+}
+
+
+/* АДАПТИВ */
